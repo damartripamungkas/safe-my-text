@@ -1,5 +1,3 @@
-<br>
-
 <h1 align="center">SAFE-MY-KEY</h1>
 
 <p align="center">
