@@ -43,7 +43,7 @@ const promptHome = async () => {
             }
         ]);
         const encryptNow = encryptText(_prompt.data, _prompt.data2); // process encrypt
-        console.log(encryptNow); // result encrypt
+        console.log(`\n\n ${encryptNow}`); // result encrypt
         setTimeout(() => process.exit(), 500); // exit tools
     } else if (_prompt == `decrypt`) {
         const _prompt = await inquirer.prompt([
@@ -58,8 +58,8 @@ const promptHome = async () => {
                 message: `Please input your password?`,
             }
         ]);
-        const decryptNow = decryptText(_prompt.data, _prompt.data2); // process decrypt
-        console.log(decryptNow !== false ? decryptNow : `fail password or text encrypt is incorrect, please input again`);
+        const decryptNow = decryptText(_prompt.data.replaceAll(" ", ""), _prompt.data2); // process decrypt
+        console.log(decryptNow !== false ? `\n\n ${decryptNow}` : `fail password or text encrypt is incorrect, please input again`);
         setTimeout(() => process.exit(), 500); // exit tools
     } else if (_prompt == `about`) {
         console.log(
