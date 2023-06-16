@@ -34,8 +34,4 @@
 ![alt text](https://github.com/damartripamungkas/safe-my-key/blob/main/images/decrypt.png?raw=true)
 
 # Donasi
-jika anda merasa terbantu oleh tool ini silahkan berdonasi untuk saya :)
-```
-bsc : 0x8fa71d824e2e9f0e9bdbd2a046a36948ac2a8490
-eth : 0x8fa71d824e2e9f0e9bdbd2a046a36948ac2a8490
-```
+jika anda merasa terbantu oleh tool ini silahkan berdonasi untuk saya :). chat saya di telegram: @damartripamungkas
