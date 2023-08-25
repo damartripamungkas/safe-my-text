@@ -27,11 +27,11 @@
 # Screnshot
 1. encrypt key pharse crypto dengan password
 
-![alt text](https://github.com/damartripamungkas/safe-my-key/blob/main/images/encrypt.png?raw=true)
+![alt text](./images/encrypt.png?raw=true)
 
 2. Decrypt text yang di hasilkan encrypt dengan password untuk mendapatkan key asli
 
-![alt text](https://github.com/damartripamungkas/safe-my-key/blob/main/images/decrypt.png?raw=true)
+![alt text](./images/decrypt.png?raw=true)
 
 # Donasi
 jika anda merasa terbantu oleh tool ini silahkan berdonasi untuk saya :). chat saya di telegram: @damartripamungkas
