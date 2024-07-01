@@ -1,0 +1,1 @@
+import{AES as n,enc as o}from"crypto-js";var i=(r,e)=>{try{let t=JSON.stringify(r);return n.encrypt(t,e).toString()}catch{return null}},p=(r,e)=>{try{let t=r.replaceAll(" ",""),c=n.decrypt(t,e).toString(o.Utf8);return JSON.parse(c)}catch{return null}};var u={encryptText:i,decryptText:p};export{p as decryptText,u as default,i as encryptText};

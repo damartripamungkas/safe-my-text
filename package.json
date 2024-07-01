@@ -1,17 +1,47 @@
 {
-  "name": "encrypttext",
+  "name": "safe-my-text",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Encrypt your text before storing it",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "test": "node ./test/test.js",
+    "build": "tsup",
+    "publish:package": "npm run build && npm publish"
   },
-  "keywords": [],
+  "homepage": "https://github.com/damartripamungkas/safe-my-text",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/damartripamungkas/safe-my-text.git"
+  },
+  "bugs": {
+    "url": "https://github.com/damartripamungkas/safe-my-text/issues"
+  },
+  "keywords": [
+    "aes",
+    "aes-256",
+    "safe-my-text",
+    "backend",
+    "frontend",
+    "nodejs",
+    "bunjs",
+    "denojs"
+  ],
+  "main": "./dist/src/index.js",
+  "module": "./dist/src/index.mjs",
+  "types": "./dist/src/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publisher": "damartripamungkas",
   "author": "damartripamungkas",
   "license": "MIT",
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.14.1",
+    "eslint": "^9.6.0",
+    "tsup": "^8.1.0"
+  },
   "dependencies": {
-    "crypto-js": "^4.1.1",
-    "inquirer": "^8.2.0"
+    "crypto-js": "^4.2.0"
   }
 }

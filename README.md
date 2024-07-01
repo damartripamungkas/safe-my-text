@@ -1,37 +1,56 @@
-<h1 align="center">SAFE-MY-KEY</h1>
+<h1 align="center">
+    SAFE-MY-TEXT
+</h1>
 
 <p align="center">
-  <img src="https://camo.githubusercontent.com/3dbcfa4997505c80ef928681b291d33ecfac2dabf563eb742bb3e269a5af909c/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f496c65726961796f2f6d61726b646f776e2d6261646765733f7374796c653d666f722d7468652d6261646765" alt="licensemit" />
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/damartripamungkas/safe-my-text?color=04D361&labelColor=000000">
+  
+  <a href="#">
+    <img alt="Made by" src="https://img.shields.io/static/v1?label=made%20by&message=damartripamungkas&color=04D361&labelColor=000000">
+  </a>
+  
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/damartripamungkas/safe-my-text?color=04D361&labelColor=000000">
+  
+  <a href="#">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/damartripamungkas/safe-my-text?color=04D361&labelColor=000000">
+  </a>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="javascript" />
-  <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="nodejs" />
-</p>
+### 📖 Description :
 
-<p align="center">
-  Tool ini berfungsi untuk encrypt dan decrypt key seperti phrase crypto wallet, privatekey crypto wallet atau lainnya dengan password dan akan mencegah sewaktu waktu bila device anda di hack dan key anda di lihat maka hacker tersebut tidak bisa melakukan sesuatu ke key tersebut karena sudah di encrypt oleh tools ini.
-</p>
+This package is made for those who want to encrypt and decrypt using AES-256. The difference between this package and the default crypto-js package is that it provides specialized handling for encryption and decryption. This package can also be used for encryption of private data such as pharse crypto, privatekey crypto and others.
 
-<br><br>
+###
 
-# Mulai cepat
-1. install nodejs LTS
-2. download file ini
-3. buka terminal dan arahkan ke folder file ini
-4. ketik npm install
-5. ketik node index.js atau npm start
-6. silahkan pilih menu yang ingin anda gunakan
-7. selesai
+### 💻 Step to install :
 
-# Screnshot
-1. encrypt key pharse crypto dengan password
+```
+npm install safe-my-text
+```
 
-![alt text](./images/encrypt.png?raw=true)
+### ✏️ Example :
 
-2. Decrypt text yang di hasilkan encrypt dengan password untuk mendapatkan key asli
+see full [here](./test)
 
-![alt text](./images/decrypt.png?raw=true)
+```typescript
+import { encryptText, decryptText } from "safe-my-text"
 
-# Donasi
-jika anda merasa terbantu oleh tool ini silahkan berdonasi untuk saya :). chat saya di telegram: @damartripamungkas
+const password = `president123`
+const encrypt = encryptText(`mypharse wallet crypto`, password)
+const decrypt = decryptText(encrypt, password)
+
+console.log({ encrypt, decrypt })
+```
+
+### 🧾 Pre-Requisistes :
+
+```
+- node.js / bun.js / deno.js
+- (optional) typescript
+- (optional) commonJS
+- (optional) ESM
+```
+
+### 📝 License :
+
+Licensed under the [MIT License](./LICENSE).
