@@ -1,6 +1,6 @@
 {
   "name": "safe-my-text",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Encrypt your text before storing it",
   "scripts": {
     "test": "node ./test/test.js",
